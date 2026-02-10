@@ -13,6 +13,12 @@ const DESCRIBES_YOU_OPTIONS = [
   "Just exploring the idea",
 ];
 
+function encode(data: Record<string, string>) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export default function WaitlistForm() {
   const [formData, setFormData] = useState({
     first_name: "",
@@ -30,29 +36,27 @@ export default function WaitlistForm() {
     setStatus("loading");
 
     try {
-      const res = await fetch("/api/waitlist", {
+      const res = await fetch("/__forms.html", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email: formData.email,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "waitlist",
           first_name: formData.first_name,
+          email: formData.email,
           location: formData.location,
           growing_status: formData.growing_status,
-          beta_tester: formData.beta_tester,
-          notes: formData.newsletter ? "Newsletter opt-in: yes" : null,
+          beta_tester: formData.beta_tester ? "yes" : "",
+          newsletter: formData.newsletter ? "yes" : "",
         }),
       });
 
-      const data = await res.json();
-
       if (!res.ok) {
         setStatus("error");
-        setMessage(data.error);
+        setMessage("Something went wrong. Mind trying again?");
         return;
       }
 
       setStatus("success");
-      setMessage(data.message);
     } catch {
       setStatus("error");
       setMessage("Something went wrong. Mind trying again?");
@@ -126,7 +130,22 @@ export default function WaitlistForm() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.15}>
-          <form onSubmit={handleSubmit} className="mt-10 space-y-5">
+          <form
+            name="waitlist"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+            className="mt-10 space-y-5"
+          >
+            {/* Netlify hidden fields */}
+            <input type="hidden" name="form-name" value="waitlist" />
+            <p className="hidden">
+              <label>
+                Don&apos;t fill this out: <input name="bot-field" />
+              </label>
+            </p>
+
             {/* First Name — required */}
             <div>
               <label htmlFor="first_name" className="block text-sm font-medium text-deep-forest/70">
@@ -134,6 +153,7 @@ export default function WaitlistForm() {
               </label>
               <input
                 id="first_name"
+                name="first_name"
                 type="text"
                 required
                 aria-label="Your first name"
@@ -151,6 +171,7 @@ export default function WaitlistForm() {
               </label>
               <input
                 id="email"
+                name="email"
                 type="email"
                 required
                 aria-label="Your email address"
@@ -168,6 +189,7 @@ export default function WaitlistForm() {
               </label>
               <input
                 id="location"
+                name="location"
                 type="text"
                 aria-label="Your location or neighborhood"
                 value={formData.location}
@@ -187,6 +209,7 @@ export default function WaitlistForm() {
               </label>
               <select
                 id="growing_status"
+                name="growing_status"
                 aria-label="What describes you best"
                 value={formData.growing_status}
                 onChange={(e) => setFormData({ ...formData, growing_status: e.target.value })}
@@ -206,6 +229,7 @@ export default function WaitlistForm() {
               <label className="flex items-start gap-3 cursor-pointer">
                 <input
                   type="checkbox"
+                  name="beta_tester"
                   checked={formData.beta_tester}
                   onChange={(e) => setFormData({ ...formData, beta_tester: e.target.checked })}
                   className="mt-0.5 h-4 w-4 rounded border-deep-forest/30 text-earth-green focus:ring-earth-green"
@@ -217,6 +241,7 @@ export default function WaitlistForm() {
               <label className="flex items-start gap-3 cursor-pointer">
                 <input
                   type="checkbox"
+                  name="newsletter"
                   checked={formData.newsletter}
                   onChange={(e) => setFormData({ ...formData, newsletter: e.target.checked })}
                   className="mt-0.5 h-4 w-4 rounded border-deep-forest/30 text-earth-green focus:ring-earth-green"
