@@ -6,51 +6,51 @@ import ScrollReveal from "./ScrollReveal";
 
 const faqs = [
   {
-    q: "What is Bartyr?",
-    a: "Bartyr is a neighborhood food exchange app launching in Atlanta in Spring 2026. It connects neighbors who grow, make, or have extra food with neighbors who need it. No money changes hands\u2014just direct exchange between people in your community.",
+    q: "What is iBartyr?",
+    a: "iBartyr is a neighborhood food exchange app launching in Atlanta in Spring 2026. It connects neighbors who grow, make, or have extra food with neighbors who need it. No money changes hands\u2014just direct exchange between people in your community.",
   },
   {
-    q: "How does Bartyr work?",
-    a: "Bartyr works in three steps: Post what you\u2019re growing or making, browse what neighbors have available nearby, and message them to arrange an exchange. You meet in person at a public location you both agree on and complete the exchange directly.",
+    q: "How does iBartyr work?",
+    a: "iBartyr works in three steps: Post what you\u2019re growing or making, browse what neighbors have available nearby, and message them to arrange an exchange. You meet in person at a public location you both agree on and complete the exchange directly.",
   },
   {
-    q: "Is Bartyr free to use?",
+    q: "Is iBartyr free to use?",
     a: "We\u2019re still building the app and haven\u2019t finalized pricing. Our goal is to make neighbor-to-neighbor food exchange accessible to everyone.",
   },
   {
-    q: "When does Bartyr launch?",
-    a: "Bartyr is targeting a Spring 2026 launch in Atlanta. We\u2019re currently building the app and gathering founding members through our waitlist.",
+    q: "When does iBartyr launch?",
+    a: "iBartyr is targeting a Spring 2026 launch in Atlanta. We\u2019re currently building the app and gathering founding members through our waitlist.",
   },
   {
-    q: "Where is Bartyr available?",
-    a: "Bartyr is launching first in Atlanta, Georgia. We\u2019re starting with one city to build the foundation right. Additional cities will be determined based on community interest.",
+    q: "Where is iBartyr available?",
+    a: "iBartyr is launching first in Atlanta, Georgia. We\u2019re starting with one city to build the foundation right. Additional cities will be determined based on community interest.",
   },
   {
-    q: "How is Bartyr different from farmers markets?",
-    a: "Farmers markets connect you with farmers who sell produce. Bartyr connects you directly with neighbors for exchange within your immediate community. It\u2019s hyper-local, relationship-focused, and doesn\u2019t involve money.",
+    q: "How is iBartyr different from farmers markets?",
+    a: "Farmers markets connect you with farmers who sell produce. iBartyr connects you directly with neighbors for exchange within your immediate community. It\u2019s hyper-local, relationship-focused, and doesn\u2019t involve money.",
   },
   {
-    q: "How is Bartyr different from Buy Nothing groups?",
-    a: "Buy Nothing groups operate on Facebook and focus on giving items away. Bartyr is a dedicated app built specifically for food exchange with features like location-based search, harvest calendars, and exchange coordination tools. We emphasize reciprocal exchange over one-way giving.",
+    q: "How is iBartyr different from Buy Nothing groups?",
+    a: "Buy Nothing groups operate on Facebook and focus on giving items away. iBartyr is a dedicated app built specifically for food exchange with features like location-based search, harvest calendars, and exchange coordination tools. We emphasize reciprocal exchange over one-way giving.",
   },
   {
-    q: "Do I need a garden to use Bartyr?",
-    a: "No. You can participate by growing herbs in your kitchen, making homemade goods like bread or jam, or offering other items of value. If you have eggs, preserves, baked goods, or even extra pantry items, you can exchange on Bartyr.",
+    q: "Do I need a garden to use iBartyr?",
+    a: "No. You can participate by growing herbs in your kitchen, making homemade goods like bread or jam, or offering other items of value. If you have eggs, preserves, baked goods, or even extra pantry items, you can exchange on iBartyr.",
   },
   {
-    q: "How does Bartyr ensure food safety?",
-    a: "Bartyr provides food safety guidelines and education. Users control who they exchange with and can view ratings and community feedback. All exchanges happen directly between neighbors\u2014you make the final decision about what you\u2019re comfortable accepting.",
+    q: "How does iBartyr ensure food safety?",
+    a: "iBartyr provides food safety guidelines and education. Users control who they exchange with and can view ratings and community feedback. All exchanges happen directly between neighbors\u2014you make the final decision about what you\u2019re comfortable accepting.",
   },
   {
-    q: "Can I use Bartyr to sell food?",
-    a: "No. Bartyr is designed for exchange, not selling. No money changes hands on the platform. If you want to sell your produce, farmers markets or farm stands are better options.",
+    q: "Can I use iBartyr to sell food?",
+    a: "No. iBartyr is designed for exchange, not selling. No money changes hands on the platform. If you want to sell your produce, farmers markets or farm stands are better options.",
   },
   {
-    q: "How do I join Bartyr?",
-    a: "Join our waitlist at bartyr.app. Waitlist members get early access when we launch in Spring 2026 and can help shape the app during development.",
+    q: "How do I join iBartyr?",
+    a: "Join our waitlist at ibartyr.app. Waitlist members get early access when we launch in Spring 2026 and can help shape the app during development.",
   },
   {
-    q: "What cities will Bartyr expand to after Atlanta?",
+    q: "What cities will iBartyr expand to after Atlanta?",
     a: "We\u2019re focusing on Atlanta first. Future expansion will be based on waitlist interest and community demand. Join the waitlist and tell us where you\u2019re located\u2014we\u2019re listening.",
   },
 ];

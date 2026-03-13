@@ -47,7 +47,7 @@ export default function Problem() {
         </StaggerContainer>
         <ScrollReveal delay={0.4}>
           <p className="mt-16 text-center font-serif text-xl font-medium text-cream italic sm:text-2xl">
-            Scarcity is manufactured. Abundance is real. Bartyr proves it.
+            Scarcity is manufactured. Abundance is real. iBartyr proves it.
           </p>
         </ScrollReveal>
       </div>

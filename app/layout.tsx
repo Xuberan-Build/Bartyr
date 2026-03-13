@@ -13,20 +13,20 @@ const crimsonPro = Crimson_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "Bartyr — Grow. Share. Thrive.",
+  title: "iBartyr — Grow. Share. Thrive.",
   description:
-    "Your neighborhood has everything you need. Bartyr connects you with neighbors who grow, make, and share—no money required. Join the waitlist for Spring 2026 launch in Atlanta.",
+    "Your neighborhood has everything you need. iBartyr connects you with neighbors who grow, make, and share—no money required. Join the waitlist for Spring 2026 launch in Atlanta.",
   openGraph: {
-    title: "Bartyr — Grow. Share. Thrive.",
+    title: "iBartyr — Grow. Share. Thrive.",
     description:
       "Connect with neighbors who grow, make, and share—no money required. Launching Spring 2026 in Atlanta.",
-    url: "https://bartyr.app",
-    siteName: "Bartyr",
+    url: "https://ibartyr.app",
+    siteName: "iBartyr",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bartyr — Grow. Share. Thrive.",
+    title: "iBartyr — Grow. Share. Thrive.",
     description:
       "Connect with neighbors who grow, make, and share—no money required.",
   },

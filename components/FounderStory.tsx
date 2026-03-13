@@ -19,7 +19,7 @@ export default function FounderStory() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <p>
-              I&apos;ve been thinking about Bartyr since 2020, watching food
+              I&apos;ve been thinking about iBartyr since 2020, watching food
               prices soar while gardens overflow. Watching neighbors become
               strangers while both struggle with the same challenges.
             </p>
@@ -33,7 +33,7 @@ export default function FounderStory() {
           </ScrollReveal>
           <ScrollReveal delay={0.25}>
             <p>
-              Bartyr is my answer to a simple question:{" "}
+              iBartyr is my answer to a simple question:{" "}
               <em>
                 What if we stopped depending on systems that don&apos;t serve us
                 and started building systems that do?

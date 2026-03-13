@@ -42,7 +42,7 @@ export default function Vision() {
         <ScrollReveal delay={0.2}>
           <div className="mx-auto mt-12 max-w-xl space-y-6 text-base leading-7 text-cream/80">
             <p>
-              Bartyr isn&apos;t just an app. It&apos;s coordination
+              iBartyr isn&apos;t just an app. It&apos;s coordination
               infrastructure for a world where neighbors take care of neighbors.
               Where food security comes from community, not corporations. Where
               abundance is the default, not scarcity.

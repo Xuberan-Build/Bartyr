@@ -26,7 +26,7 @@ export default function Hero() {
             ease: [0.25, 0.1, 0.25, 1],
           }}
         >
-          Your neighborhood has everything you need. Bartyr connects you with
+          Your neighborhood has everything you need. iBartyr connects you with
           neighbors who grow, make, and share&mdash;no money required.
         </motion.p>
         <motion.div
@@ -42,14 +42,14 @@ export default function Hero() {
           <a
             href="#waitlist"
             className="inline-flex items-center justify-center rounded-lg bg-earth-green px-6 py-3 text-base font-medium text-cream shadow-sm transition-all duration-300 hover:bg-earth-green/90 hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-earth-green"
-            aria-label="Join the Bartyr waitlist to be notified when we launch in Spring 2026"
+            aria-label="Join the iBartyr waitlist to be notified when we launch in Spring 2026"
           >
             Join the Waitlist
           </a>
           <a
             href="#how-it-works"
             className="inline-flex items-center gap-1 rounded-lg border-2 border-earth-green px-6 py-3 text-base font-medium text-earth-green transition-all duration-300 hover:bg-earth-green/10 hover:-translate-y-0.5"
-            aria-label="Scroll down to learn how Bartyr works"
+            aria-label="Scroll down to learn how iBartyr works"
           >
             See How It Works <span aria-hidden="true">↓</span>
           </a>

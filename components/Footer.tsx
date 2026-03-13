@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid gap-12 sm:grid-cols-3">
           {/* Brand */}
           <div>
-            <p className="text-xl font-bold text-cream">bartyr</p>
+            <p className="text-xl font-bold text-cream">ibartyr</p>
             <p className="mt-1 text-sm font-medium text-golden-harvest">
               grow. share. thrive.
             </p>
@@ -26,7 +26,7 @@ export default function Footer() {
                 { label: "How It Works", href: "#how-it-works" },
                 { label: "About", href: "#about" },
                 { label: "FAQ", href: "#faq" },
-                { label: "Contact", href: "mailto:hello@bartyr.app" },
+                { label: "Contact", href: "mailto:hello@ibartyr.app" },
               ].map((link) => (
                 <li key={link.label}>
                   <a
@@ -47,10 +47,10 @@ export default function Footer() {
             </p>
             <ul className="mt-4 space-y-3">
               {[
-                { label: "Instagram", href: "https://instagram.com/bartyrapp" },
-                { label: "Twitter", href: "https://twitter.com/bartyrapp" },
+                { label: "Instagram", href: "https://instagram.com/ibartyrapp" },
+                { label: "Twitter", href: "https://twitter.com/ibartyrapp" },
                 { label: "Discord", href: "#" },
-                { label: "hello@bartyr.app", href: "mailto:hello@bartyr.app" },
+                { label: "hello@ibartyr.app", href: "mailto:hello@ibartyr.app" },
               ].map((link) => (
                 <li key={link.label}>
                   <a
@@ -70,7 +70,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 border-t border-cream/10 pt-8 text-center text-xs text-cream/40">
           <p>
-            &copy; {new Date().getFullYear()} Bartyr. All rights reserved.
+            &copy; {new Date().getFullYear()} iBartyr. All rights reserved.
           </p>
           <p className="mt-2">
             <a href="#" className="hover:text-cream/60">Privacy Policy</a>

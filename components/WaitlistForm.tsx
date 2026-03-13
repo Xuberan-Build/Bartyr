@@ -85,12 +85,12 @@ export default function WaitlistForm() {
               <li>
                 Follow us on Instagram{" "}
                 <a
-                  href="https://instagram.com/bartyrapp"
+                  href="https://instagram.com/ibartyrapp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-medium text-earth-green underline"
                 >
-                  @bartyrapp
+                  @ibartyrapp
                 </a>
               </li>
               <li>
@@ -102,13 +102,13 @@ export default function WaitlistForm() {
                   Discord
                 </a>
               </li>
-              <li>Share Bartyr with your neighbors</li>
+              <li>Share iBartyr with your neighbors</li>
             </ul>
           </div>
           <p className="mt-6 font-serif text-sm text-deep-forest/60 italic">
             The revolution starts in the garden. Thanks for growing with us.
             <br />
-            &mdash; Erica &amp; the Bartyr team
+            &mdash; Erica &amp; the iBartyr team
           </p>
         </motion.div>
       </section>
