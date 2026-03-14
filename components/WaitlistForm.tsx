@@ -185,20 +185,20 @@ export default function WaitlistForm() {
             {/* Location */}
             <div>
               <label htmlFor="location" className="block text-sm font-medium text-deep-forest/70">
-                Location / Neighborhood
+                City
               </label>
               <input
                 id="location"
                 name="location"
                 type="text"
-                aria-label="Your location or neighborhood"
+                aria-label="Your city"
                 value={formData.location}
                 onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                placeholder="e.g., East Atlanta Village, Decatur, Midtown"
+                placeholder="e.g., Atlanta, Decatur, Marietta"
                 className="mt-1.5 block w-full rounded-lg border border-deep-forest/20 bg-white/80 px-4 py-3 text-base text-deep-forest shadow-sm backdrop-blur-sm placeholder:text-deep-forest/40 transition-shadow duration-200 focus:border-earth-green focus:ring-2 focus:ring-earth-green/20 focus:shadow-[0_0_0_4px_rgba(74,124,89,0.08)] focus:outline-none"
               />
               <p className="mt-1 text-xs text-deep-forest/50">
-                Helps us prioritize neighborhoods
+                Helps us prioritize where to launch next
               </p>
             </div>
 
